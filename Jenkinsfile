@@ -33,7 +33,6 @@ pipeline {
             steps {
                 sshpass -p '2252' scp target/gamutgurus.war Bala@172.17.0.2:/home/Bala/Distros/apache-tomcat-9.0.80/webapps
 		sshpass -p '2252' ssh Bala@172.17.0.2 '/home/Bala/Distros/apache-tomcat-9.0.80/bin/startup.sh'
-	    }
             }
         }
     }
